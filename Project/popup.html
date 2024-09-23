@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Productivity Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Focus Tracker</h1>
+
+  <!-- Form to Add a Website to Block -->
+  <h3>Block a Website</h3>
+  <input type="text" id="block-website-input" placeholder="Enter website (e.g., netflix.com)">
+  <button id="block-website-btn">Block Website</button>
+
+  <h3>Set a Time Limit</h3>
+  <input type="text" id="time-limit-website-input" placeholder="Enter website (e.g., netflix.com)">
+  <input type="number" id="time-limit-input" placeholder="Time limit in minutes">
+  <button id="set-time-limit-btn">Set Time Limit</button>
+
+  <!-- List of Blocked Websites -->
+  <h3>Blocked Websites</h3>
+  <ul id="blocked-websites-list"></ul>
+
+  <!-- List of Time Limits -->
+  <h3>Time Limits</h3>
+  <ul id="time-limits-list"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>
